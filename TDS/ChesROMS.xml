@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Maracoos Observation and Forcast Data TDS"
+        xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <service name="all" base="" serviceType="compound">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="http" serviceType="HTTPServer" base="/thredds/fileServer/" />
+    <service name="iso" serviceType="ISO" base="/thredds/iso/"/>
+  </service>
+
+  <service name="agg" base="" serviceType="compound">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="iso" serviceType="ISO" base="/thredds/iso/"/>
+  </service>
+ 
+  <datasetScan name="ChesROMS Station Forecast Files" ID="ChesROMS-station-forecast" path="ChesROMS-station-forecast" location="/data/ChesROMS">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+    </metadata>
+    <filter>
+      <include wildcard="*CHESROMS.station.forecast.nc"/>
+    </filter>
+  </datasetScan> 
+  
+  <datasetScan name="ChesROMS Station Nowcast Files" ID="ChesROMS-station-nowcast" path="ChesROMS-station-nowcast" location="/data/ChesROMS">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+    </metadata>
+    <filter>
+      <include wildcard="*CHESROMS.stationnow.nc"/>
+    </filter>
+  </datasetScan>
+  
+
+  <featureCollection featureType="FMRC" name="ChesROMS Forecast Aggregation Collection" harvest="true" path="ChesROMS/Agg-Forecast-Collection.nc">
+    <metadata inherited="true">
+      <serviceName>agg</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+    </metadata>
+    <collection spec="/data/ChesROMS/**/.*CHESROMS.field.forecast.nc$" name="ChesROMS_AggForecastCollection"
+                recheckAfter="15 min" olderThan="5 min" />
+    <fmrcConfig datasetTypes="Best Files" />
+  </featureCollection>
+  <!--dataset name="ChesROMS Forecast Aggregation" ID="ChesROMS-Agg" urlPath="ChesROMS/Agg.nc">
+    <serviceName>agg</serviceName>
+    <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
+      <aggregation dimName="ocean_time" type="joinExisting">
+        <scan location="/data/ChesROMS/" suffix="CHESROMS.field.forecast.nc" subdirs="true"/>
+      </aggregation>
+    </netcdf>
+  </dataset>
+ <datasetScan name="ChesROMS Forecast Files" ID="ChesROMS-field-forecast" path="ChesROMS-field-forecast" location="/data/ChesROMS">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+    </metadata>
+    <filter>
+      <include wildcard="*CHESROMS.field.forecast.nc"/>
+    </filter>
+  </datasetScan--> 
+  
+  <featureCollection featureType="FMRC" name="ChesROMS Nowcast Aggregation Collection" harvest="true" path="ChesROMS/Agg-Nowcast-Collection.nc">
+    <metadata inherited="true">
+      <serviceName>agg</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+    </metadata>
+    <collection spec="/data/ChesROMS/**/.*CHESROMS.fieldnow.nc$" name="ChesROMS_AggNowcastCollection"
+                recheckAfter="15 min" olderThan="5 min" />
+    <fmrcConfig datasetTypes="Best Files" />
+  </featureCollection>
+  <!--datasetScan name="ChesROMS Nowcast Files" ID="ChesROMS-field-nowcast" path="ChesROMS-field-nowcast" location="/data/ChesROMS">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+    </metadata>
+    <filter>
+      <include wildcard="*CHESROMS.fieldnow.nc"/>
+    </filter>
+  </datasetScan--> 
+
+</catalog>

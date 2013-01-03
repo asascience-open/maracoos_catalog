@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Maracoos Observation and Forcast Data TDS"
+        xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <service name="all" base="" serviceType="compound">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="http" serviceType="HTTPServer" base="/thredds/fileServer/" />
+    <service name="iso" serviceType="ISO" base="/thredds/iso/"/>
+  </service>
+
+  <service name="agg" base="" serviceType="compound">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="iso" serviceType="ISO" base="/thredds/iso/"/>
+  </service>
+
+  <dataset name="MODIS-Complete Aggregation" ID="MODIS-Agg" urlPath="MODIS-Agg.nc">
+    <serviceName>agg</serviceName>
+    <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
+      <aggregation dimName="time" type="joinExisting" recheckEvery="15 min">
+        <scan location="/data/modis/raw" suffix=".nc4" subdirs="true"/>
+      </aggregation>
+    </netcdf>
+  </dataset> 
+
+   <datasetScan name="MODIS Individual Files" ID="modisDatasetScan"
+               path="MODIS" location="/data/modis/raw">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+    </metadata>
+    <filter>
+      <include wildcard="*.nc4"/>
+    </filter>
+  </datasetScan>
+
+  <dataset name="MODIS-2009 Aggregation" ID="MODIS-2009-Agg" urlPath="MODIS-2009-Agg.nc">
+    <serviceName>agg</serviceName>
+    <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
+      <aggregation dimName="time" type="joinExisting">
+        <scan location="/data/modis/raw/2009/" suffix=".nc4" subdirs="false"/>
+      </aggregation>
+    </netcdf>
+  </dataset>
+
+  <dataset name="MODIS-2010 Aggregation" ID="MODIS-2010-Agg" urlPath="MODIS-2010-Agg.nc">
+    <serviceName>agg</serviceName>
+    <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
+      <aggregation dimName="time" type="joinExisting">
+        <scan location="/data/modis/raw/2010/" suffix=".nc4" subdirs="false"/>
+      </aggregation>
+    </netcdf>
+  </dataset>
+
+  <dataset name="MODIS-2011 Aggregation" ID="MODIS-2011-Agg" urlPath="MODIS-2011-Agg.nc">
+    <serviceName>agg</serviceName>
+    <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
+      <aggregation dimName="time" type="joinExisting">
+        <scan location="/data/modis/raw/2011/" suffix=".nc4" subdirs="false"/>
+      </aggregation>
+    </netcdf>
+  </dataset>
+  
+  <dataset name="MODIS-2012 Aggregation" ID="MODIS-2012-Agg" urlPath="MODIS-2012-Agg.nc">
+    <serviceName>agg</serviceName>
+    <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
+      <aggregation dimName="time" type="joinExisting">
+        <scan location="/data/modis/raw/2012/" suffix=".nc4" subdirs="false"/>
+      </aggregation>
+    </netcdf>
+  </dataset>
+
+  <dataset name="MODIS-2013 Aggregation" ID="MODIS-2013-Agg" urlPath="MODIS-2013-Agg.nc">
+    <serviceName>agg</serviceName>
+    <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
+      <aggregation dimName="time" type="joinExisting">
+        <scan location="/data/modis/raw/2013/" suffix=".nc4" subdirs="false"/>
+      </aggregation>
+    </netcdf>
+  </dataset>
+
+  <dataset name="Composites">
+    <datasetScan name="1-Day" ID="modis1DayCompositeScan"
+                 path="MODIS-Composites-1Day" location="/data/modis/composites/1-day">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <include wildcard="*.nc"/>
+      </filter>
+    </datasetScan>
+    <dataset name="1-Day-Aggregation" ID="MODIS-One-Agg" urlPath="MODIS-One-Agg.nc">
+      <serviceName>agg</serviceName>
+      <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
+        <aggregation dimName="time" type="joinExisting" recheckEvery="15 min">
+          <scan location="/data/modis/composites/1-day" suffix=".nc" subdirs="true"/>
+        </aggregation>
+      </netcdf>
+    </dataset>
+
+    <datasetScan name="3-Day" ID="modis3DayCompositeScan"
+                 path="MODIS-Composites-3Day" location="/data/modis/composites/3-day">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <include wildcard="*.nc"/>
+      </filter>
+    </datasetScan>
+
+    <dataset name="3-Day-Aggregation" ID="MODIS-Three-Agg" urlPath="MODIS-Three-Agg.nc">
+      <serviceName>agg</serviceName>
+      <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
+        <aggregation dimName="time" type="joinExisting" recheckEvery="15 min">
+          <scan location="/data/modis/composites/3-day" suffix=".nc" subdirs="true"/>
+        </aggregation>
+      </netcdf>
+    </dataset>
+
+    <datasetScan name="7-Day" ID="modis7DayCompositeScan"
+                 path="MODIS-Composites-7Day" location="/data/modis/composites/7-day">
+      <metadata inherited="true">
+        <serviceName>all</serviceName>
+      </metadata>
+      <filter>
+        <include wildcard="*.nc"/>
+      </filter>
+    </datasetScan>
+
+    <dataset name="7-Day-Aggregation" ID="MODIS-Seven-Agg" urlPath="MODIS-Seven-Agg.nc">
+      <serviceName>agg</serviceName>
+      <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
+        <aggregation dimName="time" type="joinExisting" recheckEvery="15 min">
+          <scan location="/data/modis/composites/7-day" suffix=".nc" subdirs="true"/>
+        </aggregation>
+      </netcdf>
+    </dataset>
+  </dataset>
+
+</catalog>

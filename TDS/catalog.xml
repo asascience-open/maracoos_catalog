@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Maracoos Observation and Forcast Data TDS"
+        xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <catalogRef xlink:title="Sea Surface Temperature (SST)" xlink:href="SST.xml" name=""/> 
+  <catalogRef xlink:title="MODIS" xlink:href="MODIS.xml" name=""/> 
+  <catalogRef xlink:title="ChesROMS" xlink:href="ChesROMS.xml" name=""/>
+  <catalogRef xlink:title="Weatherflow" xlink:href="Weatherflow.xml" name=""/>
+  <catalogRef xlink:title="Testing" xlink:href="Testing.xml" name=""/>
+
+</catalog>
