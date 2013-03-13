@@ -8,5 +8,8 @@
   <catalogRef xlink:title="ChesROMS" xlink:href="ChesROMS.xml" name=""/>
   <catalogRef xlink:title="Weatherflow" xlink:href="Weatherflow.xml" name=""/>
   <catalogRef xlink:title="Testing" xlink:href="Testing.xml" name=""/>
-
+  <catalogRef xlink:href="http://ferret.pmel.noaa.gov/geoide/CleanCatalogs/colossus.dl.stevens-tech.edu/thredds/bight_dailyrun_fmrc.xml" xlink:title="Stevens NYHOPS (New York Bight Subdomain)" name=""/>
+  <catalogRef xlink:href="http://ferret.pmel.noaa.gov/geoide/CleanCatalogs/colossus.dl.stevens-tech.edu/thredds/apex_dailyrun_fmrc.xml" xlink:title="Stevens NYHOPS (New York Bight Apex Subdomain)" name=""/>
+  <catalogRef xlink:href="http://ferret.pmel.noaa.gov/geoide/CleanCatalogs/tashtego.marine.rutgers.edu/thredds/roms/espresso/catalog.xml" xlink:title="Rutgers ESPRESSO 4DVAR Mid Atlantic Bight Forecast" name=""/>
+  <catalogRef xlink:href="http://ferret.pmel.noaa.gov/geoide/CleanCatalogs/geoport.whoi.edu/thredds/COAWST_catalog.xml" xlink:title="USGS: COAWST East and Gulf Coast Forecast (current, wave and sediment)" name=""/>
 </catalog>
