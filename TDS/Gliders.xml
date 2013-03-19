@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Maracoos Observation and Forcast Data TDS"
+        xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <service name="all" base="" serviceType="compound">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="http" serviceType="HTTPServer" base="/thredds/fileServer/" />
+    <service name="iso" serviceType="ISO" base="/thredds/iso/"/>
+  </service>
+
+  <service name="agg" base="" serviceType="compound">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="ncml" serviceType="NCML" base="/thredds/ncml/" />
+    <service name="uddc" serviceType="UDDC" base="/thredds/uddc/" />
+    <service name="iso" serviceType="ISO" base="/thredds/iso/"/>
+  </service>
+  
+  <dataset name="Glider Agg Testing">
+  
+    <featureCollection featureType="TRAJECTORY" name="FeatureCollection Agg" harvest="true" path="glider_feature_collection.nc">
+      <metadata inherited="true">
+        <serviceName>agg</serviceName>
+      </metadata>
+      <collection spec="/data/Testing/gliders/ru26d.*nc$" />
+    </featureCollection>
+    
+    <dataset name="NcML Agg" ID="NcML Agg" urlPath="NcmlAgg.nc">
+      <serviceName>agg</serviceName>
+      <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
+        <aggregation dimName="time" type="joinExisting" recheckEvery="10 minutes">
+          <scan location="/data/Testing/gliders/" suffix=".nc" subdirs="false" />
+        </aggregation>
+      </netcdf>
+    </dataset>
+  </dataset>
+  
+  <datasetScan  name="Scan" ID="GliderScan"
+                      path="GliderScan" location="/data/Testing/gliders/">
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+    </metadata>
+    <filter>
+      <include wildcard="*.nc"/>
+    </filter>
+  </datasetScan>
+
+</catalog>
