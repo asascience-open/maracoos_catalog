@@ -29,6 +29,9 @@
         <aggregation dimName="time" type="joinExisting" recheckEvery="15 min">
           <scan location="/data/modis/raw" suffix=".nc4" subdirs="true"/>
         </aggregation>
+        <variable name="M_WK_G">
+                <attribute name="additional_fill_values" value="0"/>
+        </variable>
       </netcdf>
     </dataset> 
 
@@ -48,6 +51,9 @@
         <aggregation dimName="time" type="joinExisting">
           <scan location="/data/modis/raw/2009/" suffix=".nc4" subdirs="false"/>
         </aggregation>
+        <variable name="M_WK_G">
+                <attribute name="additional_fill_values" value="0"/>
+        </variable>
       </netcdf>
     </dataset>
 
@@ -57,6 +63,9 @@
         <aggregation dimName="time" type="joinExisting">
           <scan location="/data/modis/raw/2010/" suffix=".nc4" subdirs="false"/>
         </aggregation>
+        <variable name="M_WK_G">
+                <attribute name="additional_fill_values" value="0"/>
+        </variable>
       </netcdf>
     </dataset>
 
@@ -66,6 +75,9 @@
         <aggregation dimName="time" type="joinExisting">
           <scan location="/data/modis/raw/2011/" suffix=".nc4" subdirs="false"/>
         </aggregation>
+        <variable name="M_WK_G">
+                <attribute name="additional_fill_values" value="0"/>
+        </variable>
       </netcdf>
     </dataset>
     
@@ -75,6 +87,9 @@
         <aggregation dimName="time" type="joinExisting">
           <scan location="/data/modis/raw/2012/" suffix=".nc4" subdirs="false"/>
         </aggregation>
+        <variable name="M_WK_G">
+                <attribute name="additional_fill_values" value="0"/>
+        </variable>
       </netcdf>
     </dataset>
 
@@ -84,6 +99,9 @@
         <aggregation dimName="time" type="joinExisting">
           <scan location="/data/modis/raw/2013/" suffix=".nc4" subdirs="false"/>
         </aggregation>
+        <variable name="M_WK_G">
+                <attribute name="additional_fill_values" value="0"/>
+        </variable>
       </netcdf>
     </dataset>
 
