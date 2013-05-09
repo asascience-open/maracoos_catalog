@@ -5,7 +5,6 @@
 
   <catalogRef xlink:title="Sea Surface Temperature (SST)" xlink:href="SST.xml" name=""/> 
   <catalogRef xlink:title="MODIS" xlink:href="MODIS.xml" name=""/> 
-  <catalogRef xlink:title="ChesROMS" xlink:href="ChesROMS.xml" name=""/>
   <catalogRef xlink:title="Weatherflow" xlink:href="Weatherflow.xml" name=""/>
   <catalogRef xlink:title="Gliders" xlink:href="Gliders.xml" name=""/>
   <catalogRef xlink:title="Testing" xlink:href="Testing.xml" name=""/>
