@@ -30,7 +30,7 @@
           <scan location="/data/modis/raw" suffix=".nc4" subdirs="true"/>
         </aggregation>
         <variable name="M_WK_G">
-                <attribute name="additional_fill_values" value="0"/>
+          <attribute name="additional_fill_values" value="0"/>
         </variable>
       </netcdf>
     </dataset> 
@@ -52,7 +52,7 @@
           <scan location="/data/modis/raw/2009/" suffix=".nc4" subdirs="false"/>
         </aggregation>
         <variable name="M_WK_G">
-                <attribute name="additional_fill_values" value="0"/>
+          <attribute name="additional_fill_values" value="0"/>
         </variable>
       </netcdf>
     </dataset>
@@ -64,7 +64,7 @@
           <scan location="/data/modis/raw/2010/" suffix=".nc4" subdirs="false"/>
         </aggregation>
         <variable name="M_WK_G">
-                <attribute name="additional_fill_values" value="0"/>
+          <attribute name="additional_fill_values" value="0"/>
         </variable>
       </netcdf>
     </dataset>
@@ -76,7 +76,7 @@
           <scan location="/data/modis/raw/2011/" suffix=".nc4" subdirs="false"/>
         </aggregation>
         <variable name="M_WK_G">
-                <attribute name="additional_fill_values" value="0"/>
+          <attribute name="additional_fill_values" value="0"/>
         </variable>
       </netcdf>
     </dataset>
@@ -88,7 +88,7 @@
           <scan location="/data/modis/raw/2012/" suffix=".nc4" subdirs="false"/>
         </aggregation>
         <variable name="M_WK_G">
-                <attribute name="additional_fill_values" value="0"/>
+          <attribute name="additional_fill_values" value="0"/>
         </variable>
       </netcdf>
     </dataset>
@@ -100,7 +100,7 @@
           <scan location="/data/modis/raw/2013/" suffix=".nc4" subdirs="false"/>
         </aggregation>
         <variable name="M_WK_G">
-                <attribute name="additional_fill_values" value="0"/>
+          <attribute name="additional_fill_values" value="0"/>
         </variable>
       </netcdf>
     </dataset>
