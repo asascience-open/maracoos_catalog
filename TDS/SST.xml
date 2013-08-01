@@ -38,12 +38,12 @@
         <serviceName>agg</serviceName>
         <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
           <aggregation dimName="time" type="joinExisting" recheckEvery="15 min">
-            <scan location="/data/remote_sensing/masked/" suffix=".nc" subdirs="true"/>
+            <scan location="/data/maracoos/udel/avhrr/masked/" suffix=".nc" subdirs="true"/>
           </aggregation>
         </netcdf>
       </dataset>
       <datasetScan name="Masked Sea Surface Temperature (SST) Individual Files" ID="sstMaskedDatasetScan"
-                   path="MaskedSST" location="/data/remote_sensing/masked/">
+                   path="MaskedSST" location="/data/maracoos/udel/avhrr/masked/">
         <metadata inherited="true">
           <serviceName>all</serviceName>
         </metadata>
@@ -53,7 +53,7 @@
       </datasetScan>
       <dataset name="Composites">
         <datasetScan name="1-Day" ID="sst1DayCompositeScan"
-                     path="SST-Composites-1Day" location="/data/remote_sensing/composites/1-day">
+                     path="SST-Composites-1Day" location="/data/maracoos/udel/avhrr/composites/1-day">
           <metadata inherited="true">
             <serviceName>all</serviceName>
           </metadata>
@@ -65,13 +65,13 @@
           <serviceName>agg</serviceName>
           <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
             <aggregation dimName="time" type="joinExisting" recheckEvery="15 min">
-              <scan location="/data/remote_sensing/composites/1-day" suffix=".nc" subdirs="true"/>
+              <scan location="/data/maracoos/udel/avhrr/composites/1-day" suffix=".nc" subdirs="true"/>
             </aggregation>
           </netcdf>
         </dataset>
     
         <datasetScan name="3-Day" ID="sst3DayCompositeScan"
-                     path="SST-Composites-3Day" location="/data/remote_sensing/composites/3-day">
+                     path="SST-Composites-3Day" location="/data/maracoos/udel/avhrr/composites/3-day">
           <metadata inherited="true">
             <serviceName>all</serviceName>
           </metadata>
@@ -83,13 +83,13 @@
           <serviceName>agg</serviceName>
           <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
             <aggregation dimName="time" type="joinExisting" recheckEvery="15 min">
-              <scan location="/data/remote_sensing/composites/3-day" suffix=".nc" subdirs="true"/>
+              <scan location="/data/maracoos/udel/avhrr/composites/3-day" suffix=".nc" subdirs="true"/>
             </aggregation>
           </netcdf>
         </dataset>
 
         <datasetScan name="7-Day" ID="sst7DayCompositeScan"
-                     path="SST-Composites-7Day" location="/data/remote_sensing/composites/7-day">
+                     path="SST-Composites-7Day" location="/data/maracoos/udel/avhrr/composites/7-day">
           <metadata inherited="true">
             <serviceName>all</serviceName>
           </metadata>
@@ -101,7 +101,7 @@
           <serviceName>agg</serviceName>
           <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
             <aggregation dimName="time" type="joinExisting" recheckEvery="15 min">
-              <scan location="/data/remote_sensing/composites/7-day" suffix=".nc" subdirs="true"/>
+              <scan location="/data/maracoos/udel/avhrr/composites/7-day" suffix=".nc" subdirs="true"/>
             </aggregation>
           </netcdf>
         </dataset>
@@ -113,12 +113,12 @@
         <serviceName>agg</serviceName>
         <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
           <aggregation dimName="time" type="joinExisting" recheckEvery="15 min">
-            <scan location="/data/remote_sensing/SST/" suffix=".nc" subdirs="true"/>
+            <scan location="/data/maracoos/udel/avhrr/raw/" suffix=".nc" subdirs="true"/>
           </aggregation>
         </netcdf>
       </dataset>
       <datasetScan name="Sea Surface Temperature (SST) Individual Files" ID="sstDatasetScan"
-                   path="SST" location="/data/remote_sensing/SST/">
+                   path="SST" location="/data/maracoos/udel/avhrr/raw/">
         <metadata inherited="true">
           <serviceName>all</serviceName>
         </metadata>
@@ -130,7 +130,7 @@
         <serviceName>agg</serviceName>
         <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
           <aggregation dimName="time" type="joinExisting">
-            <scan location="/data/remote_sensing/SST/2005/" suffix=".nc" subdirs="true"/>
+            <scan location="/data/maracoos/udel/avhrr/raw/2005/" suffix=".nc" subdirs="true"/>
           </aggregation>
         </netcdf>
       </dataset>
@@ -138,7 +138,7 @@
         <serviceName>agg</serviceName>
         <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
           <aggregation dimName="time" type="joinExisting">
-            <scan location="/data/remote_sensing/SST/2006/" suffix=".nc" subdirs="true"/>
+            <scan location="/data/maracoos/udel/avhrr/raw/2006/" suffix=".nc" subdirs="true"/>
           </aggregation>
         </netcdf>
       </dataset>
@@ -146,7 +146,7 @@
         <serviceName>agg</serviceName>
         <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
           <aggregation dimName="time" type="joinExisting">
-            <scan location="/data/remote_sensing/SST/2007/" suffix=".nc" subdirs="true"/>
+            <scan location="/data/maracoos/udel/avhrr/raw/2007/" suffix=".nc" subdirs="true"/>
           </aggregation>
         </netcdf>
       </dataset>
@@ -154,7 +154,7 @@
         <serviceName>agg</serviceName>
         <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
           <aggregation dimName="time" type="joinExisting">
-            <scan location="/data/remote_sensing/SST/2008/" suffix=".nc" subdirs="true"/>
+            <scan location="/data/maracoos/udel/avhrr/raw/2008/" suffix=".nc" subdirs="true"/>
           </aggregation>
         </netcdf>
       </dataset>
@@ -162,7 +162,7 @@
         <serviceName>agg</serviceName>
         <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
           <aggregation dimName="time" type="joinExisting">
-            <scan location="/data/remote_sensing/SST/2009/" suffix=".nc" subdirs="true"/>
+            <scan location="/data/maracoos/udel/avhrr/raw/2009/" suffix=".nc" subdirs="true"/>
           </aggregation>
         </netcdf>
       </dataset>
@@ -170,7 +170,7 @@
         <serviceName>agg</serviceName>
         <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
           <aggregation dimName="time" type="joinExisting">
-            <scan location="/data/remote_sensing/SST/2010/" suffix=".nc" subdirs="true"/>
+            <scan location="/data/maracoos/udel/avhrr/raw/2010/" suffix=".nc" subdirs="true"/>
           </aggregation>
         </netcdf>
       </dataset>
@@ -178,7 +178,7 @@
         <serviceName>agg</serviceName>
         <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
           <aggregation dimName="time" type="joinExisting" recheckEvery="15 min">
-            <scan location="/data/remote_sensing/SST/2011/" suffix=".nc" subdirs="true"/>
+            <scan location="/data/maracoos/udel/avhrr/raw/2011/" suffix=".nc" subdirs="true"/>
           </aggregation>
         </netcdf>
       </dataset>
@@ -186,7 +186,7 @@
         <serviceName>agg</serviceName>
         <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
           <aggregation dimName="time" type="joinExisting" recheckEvery="15 min">
-            <scan location="/data/remote_sensing/SST/2012/" suffix=".nc" subdirs="true"/>
+            <scan location="/data/maracoos/udel/avhrr/raw/2012/" suffix=".nc" subdirs="true"/>
           </aggregation>
         </netcdf>
       </dataset>
@@ -194,7 +194,7 @@
         <serviceName>agg</serviceName>
         <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
           <aggregation dimName="time" type="joinExisting" recheckEvery="15 min">
-            <scan location="/data/remote_sensing/SST/2013/" suffix=".nc" subdirs="true"/>
+            <scan location="/data/maracoos/udel/avhrr/raw/2013/" suffix=".nc" subdirs="true"/>
           </aggregation>
         </netcdf>
       </dataset>
