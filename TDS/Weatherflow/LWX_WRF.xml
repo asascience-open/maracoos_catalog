@@ -54,8 +54,9 @@
       <serviceName>agg</serviceName>
       <dataFormat>NetCDF</dataFormat>
     </metadata>
-    <collection spec="/data/Weatherflow/ensemble/LWX_WRF/**/#yyyy.MM.dd.HH#.*\.nc$" name="LWX_WRF" recheckAfter="15 min" olderThan="5 min" />
-    <update startup="true" rescan="0 0/15 * * * ?" trigger="allow"/> 
+    <collection spec="/data/maracoos/Weatherflow/ensemble/LWX_WRF/**/#yyyy.MM.dd.HH#.*\.nc$" name="LWX_WRF" olderThan="5 min" />
+<!--<update startup="true" rescan="0 0/15 * * * ?" trigger="allow"/>-->
+    <update startup="nocheck" trigger="allow" />
     <fmrcConfig datasetTypes="Best Files Runs" />
 
     <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
