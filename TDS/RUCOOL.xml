@@ -3,31 +3,30 @@
         xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
         xmlns:xlink="http://www.w3.org/1999/xlink">
 
-  <service name="all" base="" serviceType="compound">
+  <service name="agg" base="" serviceType="compound">
     <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
-    <service name="http" serviceType="HTTPServer" base="/thredds/fileServer/" />
-    <!--service name="wcs" serviceType="WCS" base="/thredds/wcs/" /-->
-    <!--service name="wms" serviceType="WMS" base="/thredds/wms/" /-->
-    <!--service name="ncss" serviceType="NetcdfSubset" base="/thredds/ncss/grid/" /-->
+    <service name="iso" serviceType="ISO" base="/thredds/iso/"/>
   </service>
 
-  <featureCollection name="Rutgers_WRF_3km" ID="Rutgers_WRF_3km" featureType="GRIB" path="ru/cool/3km" serviceName="odap">
+  <featureCollection name="Rutgers_WRF_3km" ID="Rutgers_WRF_3km" featureType="GRIB" path="ru/cool/3km">
     <metadata inherited="true">
+      <serviceName>agg</serviceName>
       <dataFormat>GRIB-2</dataFormat>
       <documentation type="summary">Rutgers University (RU COOL) WRF model.</documentation>
     </metadata>
     <collection spec="/data/maracoos/rutgers/RUCOOL/3km/RUWRF_3km_#yyyyMMdd#00_.+.grb2$" />
-    <update startup="true" rescan="0 0/15 * * * ? *" trigger="allow"/>
+    <update startup="true" rescan="0 15 * * * ? *" />
     <gribConfig datasetTypes="Best LatestFile Files" />
   </featureCollection>
 
-  <featureCollection name="Rutgers_WRF_9km" ID="Rutgers_WRF_9km" featureType="GRIB" path="ru/cool/9km" serviceName="odap">
+  <featureCollection name="Rutgers_WRF_9km" ID="Rutgers_WRF_9km" featureType="GRIB" path="ru/cool/9km">
     <metadata inherited="true">
+      <serviceName>agg</serviceName>
       <dataFormat>GRIB-2</dataFormat>
       <documentation type="summary">Rutgers University (RU COOL) WRF model.</documentation>
     </metadata>
     <collection spec="/data/maracoos/rutgers/RUCOOL/9km/RUWRF_9km_#yyyyMMdd#00_.+.grb2$" />
-    <update startup="true" rescan="0 0/15 * * * ? *" trigger="allow"/>
+    <update startup="true" rescan="0 15 * * * ? *" />
     <gribConfig datasetTypes="Best LatestFile Files" />
   </featureCollection>
 
