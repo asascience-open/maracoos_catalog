@@ -61,7 +61,7 @@
    below. They are off by default (recommended).
    -->
   <CatalogServices>
-    <allowRemote>true</allowRemote>
+    <allowRemote>false</allowRemote>
   </CatalogServices>
 
   <!--
