@@ -189,8 +189,8 @@
   -->
 
   <NCISO>
-    <ncmlAllow>false</ncmlAllow>
-    <uddcAllow>false</uddcAllow>
+    <ncmlAllow>true</ncmlAllow>
+    <uddcAllow>true</uddcAllow>
     <isoAllow>true</isoAllow>
   </NCISO>
 
