@@ -50,15 +50,7 @@
      * -->
     <standardCssUrl>tds.css</standardCssUrl>
     <catalogCssUrl>tdsCat.css</catalogCssUrl>
-
-    <!--
-     * The URLs (relative to "/thredds/") and alternate text for both
-     * folder and dataset icons used in HTML catalog views.
-     * -->
-    <folderIconUrl>folder.gif</folderIconUrl>
-    <folderIconAlt>Folder</folderIconAlt>
-    <datasetIconUrl>dataset.gif</datasetIconUrl> <!-- Not currently used. -->
-    <datasetIconAlt>Dataset</datasetIconAlt>     <!-- Not currently used. -->
+    <openDapCssUrl>tdsDap.css</openDapCssUrl>
 
   </htmlSetup>
 
