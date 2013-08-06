@@ -37,7 +37,7 @@
       <dataset name="Masked-SST-Complete Aggregation" ID="Masked-SST-Agg" urlPath="Masked-SST-Agg.nc">
         <serviceName>agg</serviceName>
         <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
-          <aggregation dimName="time" type="joinExisting" recheckEvery="15 min">
+          <aggregation dimName="time" type="joinExisting" recheckEvery="60 min">
             <scan location="/data/maracoos/udel/avhrr/masked/" suffix=".nc" subdirs="true"/>
           </aggregation>
         </netcdf>
@@ -64,7 +64,7 @@
         <dataset name="1-Day-Aggregation" ID="SST-One-Agg" urlPath="SST-One-Agg.nc">
           <serviceName>agg</serviceName>
           <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
-            <aggregation dimName="time" type="joinExisting" recheckEvery="15 min">
+            <aggregation dimName="time" type="joinExisting" recheckEvery="60 min">
               <scan location="/data/maracoos/udel/avhrr/composites/1-day" suffix=".nc" subdirs="true"/>
             </aggregation>
           </netcdf>
@@ -82,7 +82,7 @@
         <dataset name="3-Day-Aggregation" ID="SST-Three-Agg" urlPath="SST-Three-Agg.nc">
           <serviceName>agg</serviceName>
           <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
-            <aggregation dimName="time" type="joinExisting" recheckEvery="15 min">
+            <aggregation dimName="time" type="joinExisting" recheckEvery="60 min">
               <scan location="/data/maracoos/udel/avhrr/composites/3-day" suffix=".nc" subdirs="true"/>
             </aggregation>
           </netcdf>
@@ -100,7 +100,7 @@
         <dataset name="7-Day-Aggregation" ID="SST-Seven-Agg" urlPath="SST-Seven-Agg.nc">
           <serviceName>agg</serviceName>
           <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
-            <aggregation dimName="time" type="joinExisting" recheckEvery="15 min">
+            <aggregation dimName="time" type="joinExisting" recheckEvery="60 min">
               <scan location="/data/maracoos/udel/avhrr/composites/7-day" suffix=".nc" subdirs="true"/>
             </aggregation>
           </netcdf>
@@ -112,7 +112,7 @@
       <dataset name="SST-Complete Aggregation" ID="SST-Agg" urlPath="SST-Agg.nc">
         <serviceName>agg</serviceName>
         <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
-          <aggregation dimName="time" type="joinExisting" recheckEvery="15 min">
+          <aggregation dimName="time" type="joinExisting" recheckEvery="60 min">
             <scan location="/data/maracoos/udel/avhrr/raw/" suffix=".nc" subdirs="true"/>
           </aggregation>
         </netcdf>
@@ -193,7 +193,7 @@
       <dataset name="SST-2013 Aggregation" ID="SST-2013-Agg" urlPath="SST-2013-Agg.nc">
         <serviceName>agg</serviceName>
         <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
-          <aggregation dimName="time" type="joinExisting" recheckEvery="15 min">
+          <aggregation dimName="time" type="joinExisting" recheckEvery="60 min">
             <scan location="/data/maracoos/udel/avhrr/raw/2013/" suffix=".nc" subdirs="true"/>
           </aggregation>
         </netcdf>
