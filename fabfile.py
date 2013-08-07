@@ -13,14 +13,14 @@ env.user = "thredds"
 code_dir = "/home/thredds/maracoos_catalog"
 prod_dir = "/var/tomcat/THREDDS_PROD"
 
-def deploy_tomcat():
+def deploy_thredds():
     git_pull()
     copy_catalog()
     copy_styles()
     restart_tomcat()
 
 def git_pull():
-    if not os.path.exists(code_dir):
+    if not exists(code_dir):
         git_clone()
     with cd(code_dir):
         run("git pull origin master")
@@ -40,7 +40,3 @@ def copy_styles():
 
 def restart_tomcat():
     sudo("/etc/init.d/tomcat_thredds restart")
-
-# Usually this is all that needs to be called
-def deploy():
-    execute(deploy_tomcat)
