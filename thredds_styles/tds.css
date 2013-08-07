@@ -34,6 +34,7 @@ table img {
   width: 90%;
   background: url('images/header.png') top center no-repeat;
   padding-top: 135px; 
+  height: 0px;
 }
 
 table + h2 + h2 {
