@@ -39,7 +39,7 @@ def copy_styles():
     sudo("chown -R tomcat:tomcat %s/webapps/thredds/*" % prod_dir)
 
 def restart_tomcat():
-    sudo("service tomcat_thredds restart")
+    sudo("/etc/init.d/tomcat_thredds restart")
 
 # Usually this is all that needs to be called
 def deploy():
