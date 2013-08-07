@@ -5,7 +5,7 @@
   <!-- see http://www.unidata.ucar.edu/projects/THREDDS/tech/reference/ThreddsConfigXMLFile.html -->
   <serverInformation>
     <name>Maracoos TDS Installation</name>
-    <logoUrl></logoUrl>
+    <logoUrl>blank.gif</logoUrl>
     <logoAltText></logoAltText>
 
     <abstract>Scientific Data</abstract>
