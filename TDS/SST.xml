@@ -52,7 +52,7 @@
         </filter>
       </datasetScan>
       <dataset name="Composites">
-        <datasetScan name="1-Day" ID="sst1DayCompositeScan"
+        <datasetScan name="1-Day Individual Files" ID="sst1DayCompositeScan"
                      path="SST-Composites-1Day" location="/data/maracoos/udel/avhrr/composites/1-day">
           <metadata inherited="true">
             <serviceName>all</serviceName>
@@ -70,7 +70,7 @@
           </netcdf>
         </dataset>
     
-        <datasetScan name="3-Day" ID="sst3DayCompositeScan"
+        <datasetScan name="3-Day Individual Files" ID="sst3DayCompositeScan"
                      path="SST-Composites-3Day" location="/data/maracoos/udel/avhrr/composites/3-day">
           <metadata inherited="true">
             <serviceName>all</serviceName>
@@ -88,7 +88,7 @@
           </netcdf>
         </dataset>
 
-        <datasetScan name="7-Day" ID="sst7DayCompositeScan"
+        <datasetScan name="7-Day Individual Files" ID="sst7DayCompositeScan"
                      path="SST-Composites-7Day" location="/data/maracoos/udel/avhrr/composites/7-day">
           <metadata inherited="true">
             <serviceName>all</serviceName>
@@ -142,7 +142,7 @@
           </aggregation>
         </netcdf>
       </dataset>
-      <dataset name="SST-2007 Aggregation" ID="SST-2007-gg" urlPath="SST-2007-Agg.nc">
+      <dataset name="SST-2007 Aggregation" ID="SST-2007-Agg" urlPath="SST-2007-Agg.nc">
         <serviceName>agg</serviceName>
         <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
           <aggregation dimName="time" type="joinExisting">
