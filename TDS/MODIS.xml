@@ -106,7 +106,7 @@
     </dataset>
 
     <dataset name="Composites">
-      <datasetScan name="1-Day" ID="modis1DayCompositeScan"
+      <datasetScan name="1-Day Individual Files" ID="modis1DayCompositeScan"
                    path="MODIS-Composites-1Day" location="/data/maracoos/udel/modis/composites/1day">
         <metadata inherited="true">
           <serviceName>all</serviceName>
@@ -127,7 +127,7 @@
         </netcdf>
       </dataset>
 
-      <datasetScan name="3-Day" ID="modis3DayCompositeScan"
+      <datasetScan name="3-Day Individual Files" ID="modis3DayCompositeScan"
                    path="MODIS-Composites-3Day" location="/data/maracoos/udel/modis/composites/3day">
         <metadata inherited="true">
           <serviceName>all</serviceName>
@@ -149,7 +149,7 @@
         </netcdf>
       </dataset>
 
-      <datasetScan name="8-Day" ID="modis8DayCompositeScan"
+      <datasetScan name="8-Day Individual Files" ID="modis8DayCompositeScan"
                    path="MODIS-Composites-8Day" location="/data/maracoos/udel/modis/composites/8day">
         <metadata inherited="true">
           <serviceName>all</serviceName>
