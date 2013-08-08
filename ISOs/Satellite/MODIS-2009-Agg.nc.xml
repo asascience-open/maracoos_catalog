@@ -1,0 +1,1318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmi:MI_Metadata xmlns:gmx="http://www.isotc211.org/2005/gmx"
+                 xmlns:gsr="http://www.isotc211.org/2005/gsr"
+                 xmlns:gss="http://www.isotc211.org/2005/gss"
+                 xmlns:gts="http://www.isotc211.org/2005/gts"
+                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                 xmlns:gml="http://www.opengis.net/gml/3.2"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:gco="http://www.isotc211.org/2005/gco"
+                 xmlns:gmd="http://www.isotc211.org/2005/gmd"
+                 xmlns:gmi="http://www.isotc211.org/2005/gmi"
+                 xmlns:srv="http://www.isotc211.org/2005/srv"
+                 xsi:schemaLocation="http://www.isotc211.org/2005/gmi http://www.ngdc.noaa.gov/metadata/published/xsd/schema.xsd">
+   <gmd:fileIdentifier>
+      <gco:CharacterString>MODIS-2009-Agg</gco:CharacterString>
+   </gmd:fileIdentifier>
+   <gmd:language>
+      <gmd:LanguageCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#LanguageCode"
+                        codeListValue="eng">eng</gmd:LanguageCode>
+   </gmd:language>
+   <gmd:characterSet>
+      <gmd:MD_CharacterSetCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode"
+                               codeListValue="UTF8">UTF8</gmd:MD_CharacterSetCode>
+   </gmd:characterSet>
+   <gmd:hierarchyLevel>
+      <gmd:MD_ScopeCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_ScopeCode"
+                        codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+   </gmd:hierarchyLevel>
+   <gmd:hierarchyLevel>
+      <gmd:MD_ScopeCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_ScopeCode"
+                        codeListValue="service">service</gmd:MD_ScopeCode>
+   </gmd:hierarchyLevel>
+   <gmd:contact>
+      <gmd:CI_ResponsibleParty>
+         <gmd:individualName>
+            <gco:CharacterString>Matthew Oliver</gco:CharacterString>
+         </gmd:individualName>
+         <gmd:organisationName>
+            <gco:CharacterString>University of Delaware Ocean Exploration, Remote Sensing and Biogeography Group (ORB)</gco:CharacterString>
+         </gmd:organisationName>
+         <gmd:contactInfo>
+            <gmd:CI_Contact>
+               <gmd:address>
+                  <gmd:CI_Address>
+                     <gmd:electronicMailAddress>
+                        <gco:CharacterString>moliver@udel.edu</gco:CharacterString>
+                     </gmd:electronicMailAddress>
+                  </gmd:CI_Address>
+               </gmd:address>
+            </gmd:CI_Contact>
+         </gmd:contactInfo>
+         <gmd:role>
+            <gmd:CI_RoleCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                             codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+         </gmd:role>
+      </gmd:CI_ResponsibleParty>
+   </gmd:contact>
+   <gmd:dateStamp>
+      <gco:Date>2013-08-08</gco:Date>
+   </gmd:dateStamp>
+   <gmd:metadataStandardName>
+      <gco:CharacterString>ISO 19115-2 Geographic Information - Metadata Part 2 Extensions for imagery and gridded data</gco:CharacterString>
+   </gmd:metadataStandardName>
+   <gmd:metadataStandardVersion>
+      <gco:CharacterString>ISO 19115-2:2009(E)</gco:CharacterString>
+   </gmd:metadataStandardVersion>
+   <gmd:spatialRepresentationInfo>
+      <gmd:MD_GridSpatialRepresentation>
+         <gmd:numberOfDimensions>
+            <gco:Integer>2</gco:Integer>
+         </gmd:numberOfDimensions>
+         <gmd:axisDimensionProperties>
+            <gmd:MD_Dimension>
+               <gmd:dimensionName>
+                  <gmd:MD_DimensionNameTypeCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_DimensionNameTypeCode"
+                                                codeListValue="column">column</gmd:MD_DimensionNameTypeCode>
+               </gmd:dimensionName>
+               <gmd:dimensionSize>
+                  <gco:Integer>5000</gco:Integer>
+               </gmd:dimensionSize>
+               <gmd:resolution>
+                  <gco:Measure uom="degrees_east">0.009801960392078415</gco:Measure>
+               </gmd:resolution>
+            </gmd:MD_Dimension>
+         </gmd:axisDimensionProperties>
+         <gmd:axisDimensionProperties>
+            <gmd:MD_Dimension>
+               <gmd:dimensionName>
+                  <gmd:MD_DimensionNameTypeCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_DimensionNameTypeCode"
+                                                codeListValue="row">row</gmd:MD_DimensionNameTypeCode>
+               </gmd:dimensionName>
+               <gmd:dimensionSize>
+                  <gco:Integer>4500</gco:Integer>
+               </gmd:dimensionSize>
+               <gmd:resolution>
+                  <gco:Measure uom="degrees_north">0.00787757963639147</gco:Measure>
+               </gmd:resolution>
+            </gmd:MD_Dimension>
+         </gmd:axisDimensionProperties>
+         <gmd:cellGeometry>
+            <gmd:MD_CellGeometryCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#MD_CellGeometryCode"
+                                     codeListValue="area">area</gmd:MD_CellGeometryCode>
+         </gmd:cellGeometry>
+         <gmd:transformationParameterAvailability gco:nilReason="unknown"/>
+      </gmd:MD_GridSpatialRepresentation>
+   </gmd:spatialRepresentationInfo>
+   <gmd:identificationInfo>
+      <gmd:MD_DataIdentification id="DataIdentification">
+         <gmd:citation>
+            <gmd:CI_Citation>
+               <gmd:title>
+                  <gco:CharacterString>MODIS/MODIS-2009 Aggregation</gco:CharacterString>
+               </gmd:title>
+               <gmd:date gco:nilReason="missing"/>
+               <gmd:identifier>
+                  <gmd:MD_Identifier>
+                     <gmd:code>
+                        <gco:CharacterString>MODIS-2009-Agg</gco:CharacterString>
+                     </gmd:code>
+                  </gmd:MD_Identifier>
+               </gmd:identifier>
+               <gmd:citedResponsibleParty>
+                  <gmd:CI_ResponsibleParty>
+                     <gmd:individualName>
+                        <gco:CharacterString>Matthew Oliver</gco:CharacterString>
+                     </gmd:individualName>
+                     <gmd:organisationName>
+                        <gco:CharacterString>University of Delaware Ocean Exploration, Remote Sensing and Biogeography Group (ORB)</gco:CharacterString>
+                     </gmd:organisationName>
+                     <gmd:contactInfo>
+                        <gmd:CI_Contact>
+                           <gmd:address>
+                              <gmd:CI_Address>
+                                 <gmd:electronicMailAddress>
+                                    <gco:CharacterString>moliver@udel.edu</gco:CharacterString>
+                                 </gmd:electronicMailAddress>
+                              </gmd:CI_Address>
+                           </gmd:address>
+                        </gmd:CI_Contact>
+                     </gmd:contactInfo>
+                     <gmd:role>
+                        <gmd:CI_RoleCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                         codeListValue="originator">originator</gmd:CI_RoleCode>
+                     </gmd:role>
+                  </gmd:CI_ResponsibleParty>
+               </gmd:citedResponsibleParty>
+            </gmd:CI_Citation>
+         </gmd:citation>
+         <gmd:abstract>
+            <gco:CharacterString>MODIS Aqua ocean color and sst calculation by APS; Regridded to Mercator lon/lat projection. Processed at the University of Delaware</gco:CharacterString>
+         </gmd:abstract>
+         <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+               <gmd:individualName>
+                  <gco:CharacterString>Matthew Oliver</gco:CharacterString>
+               </gmd:individualName>
+               <gmd:organisationName>
+                  <gco:CharacterString>University of Delaware Ocean Exploration, Remote Sensing and Biogeography Group (ORB)</gco:CharacterString>
+               </gmd:organisationName>
+               <gmd:contactInfo>
+                  <gmd:CI_Contact>
+                     <gmd:address>
+                        <gmd:CI_Address>
+                           <gmd:electronicMailAddress>
+                              <gco:CharacterString>moliver@udel.edu</gco:CharacterString>
+                           </gmd:electronicMailAddress>
+                        </gmd:CI_Address>
+                     </gmd:address>
+                  </gmd:CI_Contact>
+               </gmd:contactInfo>
+               <gmd:role>
+                  <gmd:CI_RoleCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                   codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+               </gmd:role>
+            </gmd:CI_ResponsibleParty>
+         </gmd:pointOfContact>
+         <gmd:language>
+            <gco:CharacterString>eng</gco:CharacterString>
+         </gmd:language>
+         <gmd:topicCategory>
+            <gmd:MD_TopicCategoryCode>climatologyMeteorologyAtmosphere</gmd:MD_TopicCategoryCode>
+         </gmd:topicCategory>
+         <gmd:extent>
+            <gmd:EX_Extent id="boundingExtent">
+               <gmd:geographicElement>
+                  <gmd:EX_GeographicBoundingBox id="boundingGeographicBoundingBox">
+                     <gmd:extentTypeCode>
+                        <gco:Boolean>1</gco:Boolean>
+                     </gmd:extentTypeCode>
+                     <gmd:westBoundLongitude>
+                        <gco:Decimal>-99.0</gco:Decimal>
+                     </gmd:westBoundLongitude>
+                     <gmd:eastBoundLongitude>
+                        <gco:Decimal>-50.00000000000001</gco:Decimal>
+                     </gmd:eastBoundLongitude>
+                     <gmd:southBoundLatitude>
+                        <gco:Decimal>16.55876921586688</gco:Decimal>
+                     </gmd:southBoundLatitude>
+                     <gmd:northBoundLatitude>
+                        <gco:Decimal>51.999999999992106</gco:Decimal>
+                     </gmd:northBoundLatitude>
+                  </gmd:EX_GeographicBoundingBox>
+               </gmd:geographicElement>
+               <gmd:temporalElement>
+                  <gmd:EX_TemporalExtent id="boundingTemporalExtent">
+                     <gmd:extent>
+                        <gml:TimePeriod gml:id="d21">
+                           <gml:description>seconds</gml:description>
+                           <gml:beginPosition>2009-01-01T18:00:08Z</gml:beginPosition>
+                           <gml:endPosition>2009-12-31T18:30:08Z</gml:endPosition>
+                        </gml:TimePeriod>
+                     </gmd:extent>
+                  </gmd:EX_TemporalExtent>
+               </gmd:temporalElement>
+            </gmd:EX_Extent>
+         </gmd:extent>
+      </gmd:MD_DataIdentification>
+   </gmd:identificationInfo>
+   <gmd:identificationInfo>
+      <srv:SV_ServiceIdentification id="OPeNDAP">
+         <gmd:citation>
+            <gmd:CI_Citation>
+               <gmd:title>
+                  <gco:CharacterString>MODIS/MODIS-2009 Aggregation</gco:CharacterString>
+               </gmd:title>
+               <gmd:date gco:nilReason="missing"/>
+               <gmd:citedResponsibleParty>
+                  <gmd:CI_ResponsibleParty>
+                     <gmd:individualName>
+                        <gco:CharacterString>Matthew Oliver</gco:CharacterString>
+                     </gmd:individualName>
+                     <gmd:organisationName>
+                        <gco:CharacterString>University of Delaware Ocean Exploration, Remote Sensing and Biogeography Group (ORB)</gco:CharacterString>
+                     </gmd:organisationName>
+                     <gmd:contactInfo>
+                        <gmd:CI_Contact>
+                           <gmd:address>
+                              <gmd:CI_Address>
+                                 <gmd:electronicMailAddress>
+                                    <gco:CharacterString>moliver@udel.edu</gco:CharacterString>
+                                 </gmd:electronicMailAddress>
+                              </gmd:CI_Address>
+                           </gmd:address>
+                        </gmd:CI_Contact>
+                     </gmd:contactInfo>
+                     <gmd:role>
+                        <gmd:CI_RoleCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_RoleCode"
+                                         codeListValue="originator">originator</gmd:CI_RoleCode>
+                     </gmd:role>
+                  </gmd:CI_ResponsibleParty>
+               </gmd:citedResponsibleParty>
+            </gmd:CI_Citation>
+         </gmd:citation>
+         <gmd:abstract>
+            <gco:CharacterString>MODIS Aqua ocean color and sst calculation by APS; Regridded to Mercator lon/lat projection. Processed at the University of Delaware</gco:CharacterString>
+         </gmd:abstract>
+         <srv:serviceType>
+            <gco:LocalName>THREDDS OPeNDAP</gco:LocalName>
+         </srv:serviceType>
+         <srv:extent>
+            <gmd:EX_Extent>
+               <gmd:geographicElement>
+                  <gmd:EX_GeographicBoundingBox>
+                     <gmd:extentTypeCode>
+                        <gco:Boolean>1</gco:Boolean>
+                     </gmd:extentTypeCode>
+                     <gmd:westBoundLongitude>
+                        <gco:Decimal>-99.0</gco:Decimal>
+                     </gmd:westBoundLongitude>
+                     <gmd:eastBoundLongitude>
+                        <gco:Decimal>-50.00000000000001</gco:Decimal>
+                     </gmd:eastBoundLongitude>
+                     <gmd:southBoundLatitude>
+                        <gco:Decimal>16.55876921586688</gco:Decimal>
+                     </gmd:southBoundLatitude>
+                     <gmd:northBoundLatitude>
+                        <gco:Decimal>51.999999999992106</gco:Decimal>
+                     </gmd:northBoundLatitude>
+                  </gmd:EX_GeographicBoundingBox>
+               </gmd:geographicElement>
+               <gmd:temporalElement>
+                  <gmd:EX_TemporalExtent>
+                     <gmd:extent>
+                        <gml:TimePeriod gml:id="d21e47">
+                           <gml:beginPosition>2009-01-01T18:00:08Z</gml:beginPosition>
+                           <gml:endPosition>2009-12-31T18:30:08Z</gml:endPosition>
+                        </gml:TimePeriod>
+                     </gmd:extent>
+                  </gmd:EX_TemporalExtent>
+               </gmd:temporalElement>
+            </gmd:EX_Extent>
+         </srv:extent>
+         <srv:couplingType>
+            <srv:SV_CouplingType codeList="http://www.tc211.org/ISO19139/resources/codeList.xml#SV_CouplingType"
+                                 codeListValue="tight">tight</srv:SV_CouplingType>
+         </srv:couplingType>
+         <srv:containsOperations>
+            <srv:SV_OperationMetadata>
+               <srv:operationName>
+                  <gco:CharacterString>OPeNDAP Client Access</gco:CharacterString>
+               </srv:operationName>
+               <srv:DCP gco:nilReason="unknown"/>
+               <srv:connectPoint>
+                  <gmd:CI_OnlineResource>
+                     <gmd:linkage>
+                        <gmd:URL>http://tds.maracoos.org/thredds/dodsC/MODIS-2009-Agg.nc</gmd:URL>
+                     </gmd:linkage>
+                     <gmd:name>
+                        <gco:CharacterString>OPeNDAP</gco:CharacterString>
+                     </gmd:name>
+                     <gmd:description>
+                        <gco:CharacterString>THREDDS OPeNDAP</gco:CharacterString>
+                     </gmd:description>
+                     <gmd:function>
+                        <gmd:CI_OnLineFunctionCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode"
+                                                   codeListValue="download">download</gmd:CI_OnLineFunctionCode>
+                     </gmd:function>
+                  </gmd:CI_OnlineResource>
+               </srv:connectPoint>
+            </srv:SV_OperationMetadata>
+         </srv:containsOperations>
+         <srv:operatesOn xlink:href="#DataIdentification"/>
+      </srv:SV_ServiceIdentification>
+   </gmd:identificationInfo>
+   <gmd:contentInfo>
+      <gmi:MI_CoverageDescription>
+         <gmd:attributeDescription gco:nilReason="unknown"/>
+         <gmd:contentType gco:nilReason="unknown"/>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>chl_oc3</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Chlorophyll Concentration, OC3 Algorithm</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#mg%20m%5E-3"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>a_412_qaa</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Total absorption at 412 nm, QAA algorithm v5</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#m%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>a_443_qaa</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Total absorption at 443 nm, QAA algorithm v5</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#m%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>a_469_qaa</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Total absorption at 469 nm, QAA algorithm v5</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#m%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>a_488_qaa</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Total absorption at 488 nm, QAA algorithm v5</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#m%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>a_531_qaa</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Total absorption at 531 nm, QAA algorithm v5</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#m%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>a_547_qaa</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Total absorption at 547 nm, QAA algorithm v5</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#m%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>a_555_qaa</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Total absorption at 555 nm, QAA algorithm v5</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#m%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>a_645_qaa</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Total absorption at 645 nm, QAA algorithm v5</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#m%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>a_667_qaa</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Total absorption at 667 nm, QAA algorithm v5</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#m%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>a_678_qaa</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Total absorption at 678 nm, QAA algorithm v5</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#m%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>a_748_qaa</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Total absorption at 748 nm, QAA algorithm v5</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#m%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>a_869_qaa</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Total absorption at 869 nm, QAA algorithm v5</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#m%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>bb_547_qaa</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Total backscatter at 547 nm, QAA algorithm v5</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#m%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>aph_443_qaa</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Absorption due to phytoplankton at 443 nm, QAA algorithm v5</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#m%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>adg_412_qaa</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Absorption due to gelbstof and detrital material at 412 nm, QAA algorithm v5</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#m%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>c_547_qaa</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Beam attenuation at 547 nm, QAA algorithm v5</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#m%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>rrs_412</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Remote sensing reflectance at 412 nm</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#sr%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>rrs_443</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Remote sensing reflectance at 443 nm</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#sr%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>rrs_469</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Remote sensing reflectance at 469 nm</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#sr%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>rrs_488</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Remote sensing reflectance at 488 nm</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#sr%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>rrs_531</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Remote sensing reflectance at 531 nm</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#sr%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>rrs_547</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Remote sensing reflectance at 547 nm</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#sr%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>rrs_555</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Remote sensing reflectance at 555 nm</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#sr%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>rrs_645</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Remote sensing reflectance at 645 nm</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#sr%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>rrs_667</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Remote sensing reflectance at 667 nm</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#sr%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>rrs_678</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Remote sensing reflectance at 678 nm</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#sr%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>rrs_748</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Remote sensing reflectance at 748 nm</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#sr%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>rrs_869</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Remote sensing reflectance at 869 nm</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#sr%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>TSS_gould</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Total Suspended Particles (PIM+POM), Gould (200711)</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#mg%20l%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>PIM_gould</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Particulate Inorganic Matter From Sediment and Detrital Absorption at 412nm, Gould (200711)</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#mg%20l%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>POM_gould</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Particulate Organic Matter From Phytoplankton Absorption at 443nm, Gould (200711)</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#mg%20l%5E-1"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>salinity</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Salinity - based on CDOM, Ladner algorithm</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#ppt"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>sst</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Sea Surface Temperature</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#Celsius"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>red_ch</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>int</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Red Channel</gco:CharacterString>
+               </gmd:descriptor>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>green_ch</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>int</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Green Channel</gco:CharacterString>
+               </gmd:descriptor>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>blue_ch</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>int</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Blue Channel</gco:CharacterString>
+               </gmd:descriptor>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>M_WK</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>int</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Water Mass Classifications using Wards and Kmeans clustering after Oliver and Irwin 2008</gco:CharacterString>
+               </gmd:descriptor>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>M_WK_G</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>float</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Gradient Strengths Across Water Mass Classifications using Wards and Kmeans clustering after Oliver and Irwin 2008</gco:CharacterString>
+               </gmd:descriptor>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>lon</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>double</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Longitude</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#degrees_east"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>lat</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>double</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Latitude</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#degrees_north"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+         <gmd:dimension>
+            <gmd:MD_Band>
+               <gmd:sequenceIdentifier>
+                  <gco:MemberName>
+                     <gco:aName>
+                        <gco:CharacterString>time</gco:CharacterString>
+                     </gco:aName>
+                     <gco:attributeType>
+                        <gco:TypeName>
+                           <gco:aName>
+                              <gco:CharacterString>int</gco:CharacterString>
+                           </gco:aName>
+                        </gco:TypeName>
+                     </gco:attributeType>
+                  </gco:MemberName>
+               </gmd:sequenceIdentifier>
+               <gmd:descriptor>
+                  <gco:CharacterString>Time</gco:CharacterString>
+               </gmd:descriptor>
+               <gmd:units xlink:href="http://example.org/someUnitsDictionary.xml#seconds%20since%201970-01-01%2000%3A00%3A00"/>
+            </gmd:MD_Band>
+         </gmd:dimension>
+      </gmi:MI_CoverageDescription>
+   </gmd:contentInfo>
+   <gmd:distributionInfo>
+      <gmd:MD_Distribution>
+         <gmd:distributor>
+            <gmd:MD_Distributor>
+               <gmd:distributorContact gco:nilReason="missing"/>
+               <gmd:distributorFormat>
+                  <gmd:MD_Format>
+                     <gmd:name>
+                        <gco:CharacterString>OPeNDAP</gco:CharacterString>
+                     </gmd:name>
+                     <gmd:version gco:nilReason="unknown"/>
+                  </gmd:MD_Format>
+               </gmd:distributorFormat>
+               <gmd:distributorTransferOptions>
+                  <gmd:MD_DigitalTransferOptions>
+                     <gmd:onLine>
+                        <gmd:CI_OnlineResource>
+                           <gmd:linkage>
+                              <gmd:URL>http://tds.maracoos.org/thredds/dodsC/MODIS-2009-Agg.nc.html</gmd:URL>
+                           </gmd:linkage>
+                           <gmd:name>
+                              <gco:CharacterString>File Information</gco:CharacterString>
+                           </gmd:name>
+                           <gmd:description>
+                              <gco:CharacterString>This URL provides a standard OPeNDAP html interface for selecting data from this dataset. Change the extension to .info for a description of the dataset.</gco:CharacterString>
+                           </gmd:description>
+                           <gmd:function>
+                              <gmd:CI_OnLineFunctionCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_OnLineFunctionCode"
+                                                         codeListValue="download">download</gmd:CI_OnLineFunctionCode>
+                           </gmd:function>
+                        </gmd:CI_OnlineResource>
+                     </gmd:onLine>
+                  </gmd:MD_DigitalTransferOptions>
+               </gmd:distributorTransferOptions>
+               <gmd:distributorTransferOptions>
+                  <gmd:MD_DigitalTransferOptions>
+                     <gmd:onLine>
+                        <gmd:CI_OnlineResource>
+                           <gmd:linkage>
+                              <gmd:URL>http://www.ncdc.noaa.gov/oa/wct/wct-jnlp-beta.php?singlefile=http://tds.maracoos.org/thredds/dodsC/MODIS-2009-Agg.nc</gmd:URL>
+                           </gmd:linkage>
+                           <gmd:name>
+                              <gco:CharacterString>Viewer Information</gco:CharacterString>
+                           </gmd:name>
+                           <gmd:description>
+                              <gco:CharacterString>This URL provides an NCDC climate and weather toolkit view of an OPeNDAP resource.</gco:CharacterString>
+                           </gmd:description>
+                           <gmd:function>
+                              <gmd:CI_OnLineFunctionCode codeList="http://www.ngdc.noaa.gov/metadata/published/xsd/schema/resources/Codelist/gmxCodelists.xml#CI_PresentationFormCode"
+                                                         codeListValue="mapDigital">mapDigital</gmd:CI_OnLineFunctionCode>
+                           </gmd:function>
+                        </gmd:CI_OnlineResource>
+                     </gmd:onLine>
+                  </gmd:MD_DigitalTransferOptions>
+               </gmd:distributorTransferOptions>
+            </gmd:MD_Distributor>
+         </gmd:distributor>
+      </gmd:MD_Distribution>
+   </gmd:distributionInfo>
+   <gmd:metadataMaintenance>
+      <gmd:MD_MaintenanceInformation>
+         <gmd:maintenanceAndUpdateFrequency gco:nilReason="unknown"/>
+         <gmd:maintenanceNote>
+            <gco:CharacterString>This record was translated from NcML using UnidataDD2MI.xsl Version 2.3</gco:CharacterString>
+         </gmd:maintenanceNote>
+      </gmd:MD_MaintenanceInformation>
+   </gmd:metadataMaintenance>
+</gmi:MI_Metadata>
