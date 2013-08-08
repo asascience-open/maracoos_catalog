@@ -8,7 +8,7 @@
     <service name="iso" serviceType="ISO" base="/thredds/iso/"/>
   </service>
 
-  <featureCollection name="Rutgers_WRF_3km" ID="Rutgers_WRF_3km" featureType="GRIB" path="ru/cool/3km">
+  <featureCollection name="Rutgers_WRF_3km" featureType="GRIB" path="Rutgers_WRF_3km.nc">
     <metadata inherited="true">
       <serviceName>agg</serviceName>
       <dataFormat>GRIB-2</dataFormat>
@@ -19,7 +19,7 @@
     <gribConfig datasetTypes="Best LatestFile Files" />
   </featureCollection>
 
-  <featureCollection name="Rutgers_WRF_9km" ID="Rutgers_WRF_9km" featureType="GRIB" path="ru/cool/9km">
+  <featureCollection name="Rutgers_WRF_9km" featureType="GRIB" path="Rutgers_WRF_9km.nc">
     <metadata inherited="true">
       <serviceName>agg</serviceName>
       <dataFormat>GRIB-2</dataFormat>
