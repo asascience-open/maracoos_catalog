@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog name="Maracoos Observation and Forcast Data TDS"
+        xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <service name="all" base="" serviceType="compound">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="http" serviceType="HTTPServer" base="/thredds/fileServer/" />
+    <service name="iso" serviceType="ISO" base="/thredds/iso/"/>
+  </service>
+
+  <service name="agg" base="" serviceType="compound">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="iso" serviceType="ISO" base="/thredds/iso/"/>
+  </service>
+
+  <featureCollection featureType="FMRC" name="NWS WRF Forecast Aggregation Collection" path="NWS-WRF/Agg-Collection.nc">
+    <metadata inherited="true">
+      <serviceName>agg</serviceName>
+      <dataFormat>NetCDF</dataFormat>
+    </metadata>
+    <collection spec="/data/maracoos/Weatherflow/ensemble/NWS_WRF/**/#yyyy.MM.dd.HH#.*\.nc$" name="NWS_WRF" olderThan="5 min" />
+    <update startup="nocheck" rescan="0 0 3,15 * * ?" trigger="allow" />
+    <fmrcConfig datasetTypes="Best Files Runs" />
+
+    <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
+      <variable name="lat" orgName="g0_lat_0">
+        <attribute name="standard_name" value="latitude" />
+      </variable>
+      <variable name="lon" orgName="g0_lon_1">
+        <attribute name="standard_name" value="longitude" />
+      </variable> 
+      <variable name="u" orgName="U_GRD_GDS0_HTGL_10">
+        <attribute name="standard_name" value="eastward_wind_velocity" />
+        <attribute name="coordinates" value="time lat lon" />
+      </variable>
+      <variable name="v" orgName="V_GRD_GDS0_HTGL_10">
+        <attribute name="standard_name" value="northward_wind_velocity" />
+        <attribute name="coordinates" value="time lat lon" />
+      </variable>
+      <variable name="pressure" orgName="PRMSL_GDS0_SFC_10">
+        <attribute name="coordinates" value="time lat lon" />
+      </variable>
+      <variable name="temperature" orgName="TMP_GDS0_HTGL_10">
+        <attribute name="coordinates" value="time lat lon" />
+      </variable>
+      <variable name="humidity" orgName="R_H_GDS0_HTGL_10">
+        <attribute name="coordinates" value="time lat lon" />
+      </variable>
+    </netcdf>
+  </featureCollection>
+</catalog>
