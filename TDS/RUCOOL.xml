@@ -30,4 +30,43 @@
     <gribConfig datasetTypes="Best LatestFile Files" />
   </featureCollection>
 
+  <dataset name="ROMS Forcing">
+    <metadata inherited="true">
+      <documentation type="summary">
+        Qair: RH02
+        Pair: SLP
+        Tair: T2
+        Uwind: U10r
+        Vwind: V10r
+        rain rate: TACC_PRECIP(i) - TACC_PRECIP(i-1) (TACC_PRECIP(0) for hr 0 rain rate)
+        LWrad_down: GLW
+        LWrad_net: GLW-LWUPB
+        SWrad_net: GSW
+      </documentation>
+    </metadata>
+                       
+    <dataset name="Rutgers WRF 3km ROMS Forcing Aggregation" ID="Rutgers-WRF-3km-ROMS" urlPath="RUWRF-3km-ROMS-Agg.nc">
+      <serviceName>agg</serviceName>
+      <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
+        <aggregation dimName="Time" type="joinExisting" recheckEvery="60 min">
+          <variable name="Time" orgName="Times" />
+          <scan location="/data/maracoos/rutgers/RUWRF/3km" regExp="wrfout_d01.*" />
+        </aggregation>
+      </netcdf>
+    </dataset>
+
+    <dataset name="Rutgers WRF 9km ROMS Forcing Aggregation" ID="Rutgers-WRF-9km-ROMS" urlPath="RUWRF-9km-ROMS-Agg.nc">
+      <serviceName>agg</serviceName>
+      <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
+        <aggregation dimName="Time" type="joinExisting" recheckEvery="60 min">
+          <variable name="Time" orgName="Times" />
+          <scan location="/data/maracoos/rutgers/RUWRF/9km" regExp="wrfout_d01.*" />
+        </aggregation>
+      </netcdf>
+    </dataset>
+
+  </dataset>
+
+
+
 </catalog>
