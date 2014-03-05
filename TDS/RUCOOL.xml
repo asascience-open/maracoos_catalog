@@ -49,7 +49,6 @@
       <serviceName>agg</serviceName>
       <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
         <aggregation dimName="Time" type="joinExisting" recheckEvery="60 min">
-          <variable name="Time" orgName="Times" />
           <scan location="/data/maracoos/rutgers/RUWRF/3km" regExp="wrfout_d01.*" />
         </aggregation>
       </netcdf>
@@ -59,7 +58,6 @@
       <serviceName>agg</serviceName>
       <netcdf xmlns="http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2">
         <aggregation dimName="Time" type="joinExisting" recheckEvery="60 min">
-          <variable name="Time" orgName="Times" />
           <scan location="/data/maracoos/rutgers/RUWRF/9km" regExp="wrfout_d01.*" />
         </aggregation>
       </netcdf>
