@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    name="MARACOOS Observation and Forecast Data TDS - WeatherFlow Ensemble">
+
+    <service name="all" base="" serviceType="compound">
+        <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+        <service name="http" serviceType="HTTPServer" base="/thredds/fileServer/" />
+        <service name="iso" serviceType="ISO" base="/thredds/iso/"/>
+    </service>
+
+    <!-- MARACOOS Ensemble -->
+    <featureCollection name="MARACOOS Ensemble" featureType="GRIB" path="maracoos_ensemble.nc">
+        <metadata inherited="true">
+        <serviceName>all</serviceName>
+            <dataFormat>GRIB-2</dataFormat>
+            <documentation type="summary">The MARACOOS ensemble is created by WeatherFlow and is composed of mean and standard deviation statistics of the following models: Rutgers WRF, WeatherFlow RAMS Chesapeake Bay, WeatherFlow RAMS North East, WRF ARW East, WRF NMM East, WRF Sterling WFO, NAM 4k, and HRRR. The ensemble is produced twice a day (00Z and 12Z) for a 24 hour forecast on a 2km grid.</documentation>
+        </metadata>
+        <collection spec="/data/maracoos/Weatherflow/ensemble/maracoos_ensemble/maracoos_ensemble_#yyyy-MM-dd-HH#00.grib2$" />
+        <update startup="true" rescan="0 15 * * * ? *" />
+        <gribConfig datasetTypes="Best LatestFile Files" />
+    </featureCollection>
+
+    <!-- WeatherFlow RAMS Chesapeake Bay -->
+    <featureCollection name="WeatherFlow RAMS Chesapeake Bay" featureType="GRIB" path="maracoos_rams_2k_cb.nc">
+        <metadata inherited="true">
+        <serviceName>all</serviceName>
+            <dataFormat>GRIB-2</dataFormat>
+            <documentation type="summary">The WeatherFlow RAMS  Chesapeake Bay is a configuration of the Regional Atmospheric Modeling System (RAMS) run by WeatherFlow. The model is run 4 times a day starting at 00, 06, 12, and 18 UTC and run out for 37 hours. It is currently run with 2 km horizontal resolution and with 1 hour output temporal resolution.</documentation>
+        </metadata>
+        <collection spec="/data/maracoos/Weatherflow/ensemble/maracoos_rams_2k_cb/maracoos_rams_2k_cb_#yyyy-MM-dd-HH#00.grib2$" />
+        <update startup="true" rescan="0 15 * * * ? *" />
+        <gribConfig datasetTypes="Best LatestFile Files" />
+    </featureCollection>
+
+    <!-- WeatherFlow RAMS North East -->
+    <featureCollection name="WeatherFlow RAMS North East" featureType="GRIB" path="maracoos_rams_2k_ne.nc">
+        <metadata inherited="true">
+        <serviceName>all</serviceName>
+            <dataFormat>GRIB-2</dataFormat>
+            <documentation type="summary">The WeatherFlow RAMS  North East is a configuration of the Regional Atmospheric Modeling System (RAMS) run by WeatherFlow. The model is run 4 times a day starting at 00, 06, 12, and 18 UTC and run out for 37 hours. It is currently run with 2 km horizontal resolution and with 1 hour output temporal resolution.</documentation>
+        </metadata>
+        <collection spec="/data/maracoos/Weatherflow/ensemble/maracoos_rams_2k_ne/maracoos_rams_2k_ne_#yyyy-MM-dd-HH#00.grib2$" />
+        <update startup="true" rescan="0 15 * * * ? *" />
+        <gribConfig datasetTypes="Best LatestFile Files" />
+    </featureCollection>
+
+    <!-- WRF ARW East -->
+    <featureCollection name="WRF ARW East" featureType="GRIB" path="maracoos_wrf_4k_east_arw.nc">
+        <metadata inherited="true">
+        <serviceName>all</serviceName>
+            <dataFormat>GRIB-2</dataFormat>
+            <documentation type="summary">The WRF ARW East is part of the NOAA/NCEP High-Resolution Window Forecast System (HIRESW) and consists of twice daily (00Z and 12Z) runs of the WRF version of the non-hydrostatic NCAR Advanced Research WRF (ARW) at 4 km resolution for a 48 hour forecast.</documentation>
+        </metadata>
+        <collection spec="/data/maracoos/Weatherflow/ensemble/maracoos_wrf_4k_east_arw/maracoos_wrf_4k_east_arw_#yyyy-MM-dd-HH#00.grib2$" />
+        <update startup="true" rescan="0 15 * * * ? *" />
+        <gribConfig datasetTypes="Best LatestFile Files" />
+    </featureCollection>
+
+    <!-- WRF NMM East -->
+    <featureCollection name="WRF NMM East" featureType="GRIB" path="maracoos_wrf_4k_east_nmm.nc">
+        <metadata inherited="true">
+        <serviceName>all</serviceName>
+            <dataFormat>GRIB-2</dataFormat>
+            <documentation type="summary">The WRF NMM East is part of the NOAA/NCEP High-Resolution Window Forecast System (HIRESW) and consists of twice daily (00Z and 12Z) runs of the WRF version of the non-hydrostatic, hybrid vertical coordinate mesoscale model (NMM) at 4 km resolution for a 48 hour forecast.</documentation>
+        </metadata>
+        <collection spec="/data/maracoos/Weatherflow/ensemble/maracoos_wrf_4k_east_nmm/maracoos_wrf_4k_east_nmm_#yyyy-MM-dd-HH#00.grib2$" />
+        <update startup="true" rescan="0 15 * * * ? *" />
+        <gribConfig datasetTypes="Best LatestFile Files" />
+    </featureCollection>
+
+    <!-- NAM 4k -->
+    <featureCollection name="NAM 4k" featureType="GRIB" path="maracoos_nam_4k.nc">
+        <metadata inherited="true">
+        <serviceName>all</serviceName>
+            <dataFormat>GRIB-2</dataFormat>
+            <documentation type="summary">The NAM 4km (North American Mesoscale Forecast System) is run by NOAA/NCEP's Environmental Modeling Center at 4km resolution four times daily at 00z, 06z, 12z, and 18z for a 60 hour forecast and consists of the following components: The NOAA Environmental Modeling System (NEMS) version of the Non-Hydrostatic Multi-scale Model in B-grid (NMMB) and the NCEP regional Grid-Point Statistical Interpolation (GSI) analysis</documentation>
+        </metadata>
+        <collection spec="/data/maracoos/Weatherflow/ensemble/maracoos_nam_4k/maracoos_nam_4k_#yyyy-MM-dd-HH#00.grib2$" />
+        <update startup="true" rescan="0 15 * * * ? *" />
+        <gribConfig datasetTypes="Best LatestFile Files" />
+    </featureCollection>
+
+    <!-- HRRR -->
+    <featureCollection name="HRRR" featureType="GRIB" path="maracoos_hrrr_3k.nc">
+        <metadata inherited="true">
+        <serviceName>all</serviceName>
+            <dataFormat>GRIB-2</dataFormat>
+            <documentation type="summary">The HRRR (High-Resolution Rapid Refresh) was developed by NOAA's Earth System Research Laboratory. It is based on the WRF-ARW model with advanced data-assimilation capabilities. Is has a resolution of 3-km , and the model is run 24 times per day (hourly updated)  to produce a 15 hour forecast each cycle.</documentation>
+        </metadata>
+        <collection spec="/data/maracoos/Weatherflow/ensemble/maracoos_hrrr_3k/maracoos_hrrr_3k_#yyyy-MM-dd-HH#00.grib2$" />
+        <update startup="true" rescan="0 15 * * * ? *" />
+        <gribConfig datasetTypes="Best LatestFile Files" />
+    </featureCollection>
+
+    <!-- TEMPLATE -->
+    <!--
+    <featureCollection name="TEMPLATE" featureType="GRIB" path="template.nc">
+        <metadata inherited="true">
+        <serviceName>all</serviceName>
+            <dataFormat>GRIB-2</dataFormat>
+            <documentation type="summary"></documentation>
+        </metadata>
+        <collection spec="/data/maracoos/Weatherflow/ensemble/template/template_#yyyy-MM-dd-HH#00.grib2$" />
+        <update startup="true" rescan="0 15 * * * ? *" />
+        <gribConfig datasetTypes="Best LatestFile Files" />
+    </featureCollection>a
+    -->
+
+</catalog>
+

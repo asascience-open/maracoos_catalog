@@ -5,7 +5,7 @@
 
   <catalogRef xlink:title="Sea Surface Temperature (SST)" xlink:href="SST.xml" name=""/> 
   <catalogRef xlink:title="MODIS" xlink:href="MODIS.xml" name=""/> 
-  <catalogRef xlink:title="Weatherflow" xlink:href="Weatherflow.xml" name=""/>
+  <catalogRef xlink:title="Weatherflow" xlink:href="weatherflow.xml" name=""/>
   <catalogRef xlink:title="Rutgers RUCOOL" xlink:href="RUCOOL.xml" name=""/>
   
   <catalogRef xlink:href="http://ferret.pmel.noaa.gov/geoide/CleanCatalogs/colossus.dl.stevens-tech.edu/thredds/bight_dailyrun_fmrc.xml" xlink:title="Stevens NYHOPS (New York Bight Subdomain)" name=""/>
